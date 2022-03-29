@@ -93,7 +93,7 @@ public class TV {
 	}
 
 	public void canalDown() {
-		if (this.estado == true && this.canal > 2) {
+		if (this.estado == true && this.canal >= 2) {
 			this.canal--;
 		}
 	}
@@ -105,7 +105,7 @@ public class TV {
 	}
 
 	public void volumenDown() {
-		if (this.estado == true && this.volumen > 1) {
+		if (this.estado == true && this.volumen >= 1) {
 			this.volumen--;
 
 		}
