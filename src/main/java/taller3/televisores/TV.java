@@ -86,26 +86,28 @@ public class TV {
 		return estado;
 	}
 
-	public void canalUp() {
+	public int canalUp() {
 		if (this.estado == true && this.canal <120) {
 			this.canal++;
+			return this.canal;
 		}
 	}
 
-	public void canalDown() {
+	public int canalDown() {
 		if (this.estado == true && this.canal > 1) {
 			this.canal--;
+			return this.canal;
 		}
 	}
 
 	public void volumenUp() {
-		if (this.estado == false && this.volumen <= 7) {
+		if (this.estado == false && this.volumen < 7) {
 			this.volumen++;
 		}
 	}
 
 	public void volumenDown() {
-		if (this.estado == false && this.volumen >= 1) {
+		if (this.estado == false && this.volumen > 0) {
 			this.volumen--;
 
 		}
