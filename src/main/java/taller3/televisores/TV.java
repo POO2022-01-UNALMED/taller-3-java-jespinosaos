@@ -104,13 +104,13 @@ public class TV {
 	}
 
 	public void volumenUp() {
-		if (this.estado == false && this.volumen < 7) {
+		if (this.estado == true && this.volumen < 7) {
 			this.volumen++;
 		}
 	}
 
 	public void volumenDown() {
-		if (this.estado == false && this.volumen > 0) {
+		if (this.estado == true && this.volumen > 0) {
 			this.volumen--;
 
 		}
